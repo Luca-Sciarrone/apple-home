@@ -1,0 +1,726 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+/* ------------------------------------------------------------------ Navigazione */
+nav {
+    background-color: #1d1d1f;
+}
+
+header {
+    height: 100%;
+    width: 70%;
+    margin: 0 auto;
+    background-color: #1D1D1F;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+header a {
+    color: #F5F5F7;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.nav_responsive {
+    display: none;
+}
+
+/*--------------------------------------------------------- Impostazioni comuni Main */
+
+.base {
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.titolo,
+.paragrafo {
+    color: #1D1D1F;
+}
+
+.titolo {
+    font-size: 60px;
+    font-weight: 500;
+    padding: 75px 0 10px;
+}
+
+.paragrafo {
+    font-size: 28px;
+    font-weight: 300;
+}
+
+
+.contenitore {
+    color: #0066CC;
+    display: flex;
+    font-size: 25px;
+    font-weight: 200;
+    margin-top: 25px;
+}
+
+.scopri {
+    margin-right: 25px;
+}
+
+/* ------------------------------------------------------------------ Sezione Pro */
+
+#Pro {
+    height: 777px;
+    background-image: url(../img/hero_iphone14pro__e5xbgo5ffhg2_large.webp);
+}
+
+#Pro .titolo,
+#Pro .paragrafo {
+    color: #F5F5F7;
+}
+
+/*------------------------------------------------------------------ Sezione Plus */
+
+#Plus {
+    height: 803px;
+    background-image: url(../img/hero_iphone14_preorder__c4g2wjzuugqe_largetall.webp);
+}
+
+.p1 {
+    font-weight: 400;
+}
+
+.p2 {
+    margin: 18px 0 0 0;
+    color: #888888;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+/*------------------------------------------------------------------ Sezione Watch */
+
+#watch {
+    height: 667px;
+    background-image: url(../img/hero_apple_watch_ultra__dtz0f3e8oscy_largetall.webp);
+}
+
+/*----------------------------------------------------------------------- Galleria */
+
+#galleria {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+#galleria .titolo {
+    font-size: 40px;
+}
+
+#galleria1 .titolo,
+#galleria1 .paragrafo,
+#galleria2 .paragrafo {
+    color: #F5F5F7;
+}
+
+#galleria .paragrafo,
+#galleria .contenitore {
+    font-size: 22px;
+}
+
+.galleria {
+    height: 700px;
+    width: 49%;
+}
+
+span {
+    color: #FF0592;
+    margin-left: 45px;
+}
+
+#galleria1 {
+    background-image: url(../img/promo_airpods_pro_avail__gaxggskofx6y_large.webp);
+}
+
+#galleria2 {
+    background-image: url(../img/promo_apple_watch_series_8__ch7rexplmihe_large.webp);
+}
+
+#galleria3 {
+    background-image: url(../img/promo_apple_watch_se__f9702l6odgi2_large.webp);
+}
+
+#galleria4 {
+    background-image: url(../img/promo-apple-fitness-plus-iphone__bzeal882mv7m_large.webp);
+}
+
+#galleria5 {
+    background-image: url(../img/promo_bts__bg3cb4kaoqoi_large.webp);
+}
+
+#galleria6 {
+    background-image: url(../img/promo_macbookair__fywl7i82fueu_large.webp);
+}
+
+/*--------------------------------------------------------------------- Sezione Scorrevole */
+
+#scorrevole {
+    height: 641px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+#foto1 {
+    background-image: url(../img/1250x703_3.webp);
+    flex-basis: 20%;
+}
+
+#foto2 {
+    background-image: url(../img/1250x703_1.webp);
+    flex-basis: 60%;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 50px 65px;
+    color: #F5F5F7;
+    /* Perché non serve dare l'istruzione Height:100%? Nel primo esercizio le due didascalie lo richiedevano per prendere l'altezza del loro contenitore. Adesso sembra di no. */
+}
+
+#foto3 {
+    background-image: url(../img/1250x703_2.webp);
+    flex-basis: 20%;
+
+}
+
+.guarda {
+    padding: 15px;
+    background-color: #F5F5F7;
+    color: #1D1D1F;
+    margin-right: 30px;
+    border-radius: 50px;
+}
+
+.film {
+    padding-bottom: 15px;
+    font-size: 16px;
+}
+
+/*----------------------------------------------------------------------- Footer */
+
+footer {
+    margin-top: 10px;
+    height: 900px;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    color: #888888;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+#lista {
+    height: 100%;
+    border-bottom: 1px solid #888888;
+    padding: 20px 0;
+}
+
+.ol {
+    padding-left: 20px;
+}
+
+#collegamenti {
+    width: 1120px;
+    padding-top: 15px;
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-bottom: 60px;
+}
+
+.div_coll {
+    flex-basis: 25%;
+    align-items: center;
+    color: #888888;
+    margin-right: 10px;
+}
+
+h3 {
+    color: #1D1D1F;
+    font-size: 14px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.div_coll a {
+    color: #888888;
+}
+
+#colonne_responsive {
+    display: none;
+}
+
+#pedice_generale {
+    width: 1120px;
+    display: flex;
+    background-color: #f2f2f2;
+    flex-direction: column;
+}
+
+.ped1 {
+    border-bottom: 1px solid #888888;
+}
+
+.ped2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.a_pedice1 {
+    color: #0066CC;
+}
+
+#ancore_pedice2 {
+    padding-bottom: 25px;
+}
+
+.a_pedice2,
+.a_pedice3 {
+    color: #888888;
+    border-right: 1px solid;
+    padding-right: 10px;
+}
+
+.a_pedice3 {
+    padding-left: 10px;
+}
+
+/* --------------------------------------------------------- RESPONSIVE */
+
+/* Colonne responsive*/
+
+#colonne_responsive {
+    max-width: 1120px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 60px;
+}
+
+.div_coll_responsive {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #888888;
+    padding: 10px;
+}
+
+@media only screen and (max-width:860px) {
+
+    header a {
+        display: none;
+    }
+
+    .nav_responsive {
+        display: flex;
+        height: 48px;
+        width: 100%;
+        cursor: pointer;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav_responsive a {
+        display: block;
+    }    
+
+    .nav_responsive span {
+        display: block;
+        height: 1px;
+        width: 18px;
+        background-color: #fff;
+        margin: 5px 0;
+        
+    }
+
+    /* .nav_responsive span:nth-child(2) {
+        margin: 5px 0;
+    } */
+
+    
+}
+
+@media only screen and (min-width:1134px) and (max-width:1506px) {
+
+    #lista {
+        min-width: 1134px;
+        margin-top: 20px;
+        padding-bottom: 15px;
+        padding-left: 15px;
+    }
+
+    #collegamenti {
+        min-width: 1134px;
+        padding: 15px 15px 0;
+    }
+
+    #pedice_generale {
+        min-width: 1134px;
+        padding: 0 15px;
+    }
+}
+
+
+@media only screen and (min-width:767px) and (max-width:1134px) {
+
+    #lista {
+        font-size: 14px;
+        padding: 20px;
+        width: 100%;
+        height: auto;
+    }
+
+    #collegamenti {
+        width: 100%;
+        height: auto;
+        padding: 20px 20px 0;
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .div_coll {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-basis: 20%;
+        padding-bottom: 25px;
+    }
+
+    #pedice_generale {
+        width: 100%;
+        padding: 0 20px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width:614px) and (max-width:767px) {
+
+    #Pro h2 {
+        font-size: 45px
+    }
+
+    #galleria {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .galleria {
+        width: 100%;
+    }
+
+    #foto1 {
+        flex-basis: 12%;
+    }
+
+    #foto2 {
+        flex-direction: column;
+        justify-content: flex-end;
+        flex-basis: 76%;
+        font-size: 10px;
+        padding-right: 70px;
+    }
+
+    .guarda {
+        font-size: 21px;
+    }
+
+    .film {
+        margin-top: 10px;
+    }
+
+    #foto3 {
+        flex-basis: 12%;
+    }
+
+    #lista {
+        font-size: 12px;
+        padding-left: 10px;
+        height: auto;
+    }
+
+    #collegamenti {
+        display: none;
+    }
+
+    #colonne_responsive {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    #colonne_responsive h3, p {
+        font-size: 12px;
+    }
+
+    #pedice_generale {
+        width: 100%;
+        height: auto;
+        padding: 0 10px 0 10px;
+        font-size: 10px;
+    }
+
+}
+
+@media only screen and (min-width:500px) and (max-width:614px) {
+
+    #Pro h2 {
+        font-size: 45px
+    }
+
+    .contenitore {
+        font-size: 20px;
+    }
+
+    #galleria {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .galleria {
+        width: 100%;
+    }
+
+    #foto1 {
+        flex-basis: 12%;
+    }
+
+    #foto2 {
+        flex-direction: column;
+        justify-content: flex-end;
+        flex-basis: 76%;
+        font-size: 10px;
+        padding-right: 70px;
+    }
+
+    .film {
+        margin-top: 10px;
+    }
+
+    #foto3 {
+        flex-basis: 12%;
+    }
+
+    #lista {
+        font-size: 11px;
+        padding-left: 10px;
+    }
+
+    #collegamenti {
+        display: none;
+    }
+
+    #colonne_responsive {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    #colonne_responsive h3, p {
+        font-size: 11px;
+    }
+
+    .div_coll_responsive {
+        padding: 8px;
+    }
+
+    #pedice_generale {
+        width: 100%;
+        height: auto;
+        padding: 0 10px 0 10px;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (min-width:281px) and (max-width:499px) {
+
+   
+    .titolo {
+        font-size: 45px;
+    }
+
+    .paragrafo {
+        font-size: 18px;
+    }
+
+    #galleria {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #galleria .titolo {
+        font-size: 30px;
+    }
+
+    #galleria .paragrafo {
+        font-size: 15px;
+    }
+
+    .galleria {
+        width: 100%;
+    }
+
+    #foto1 {
+        flex-basis: 12%;
+    }
+
+    #foto2 {
+        flex-direction: column;
+        justify-content: flex-end;
+        flex-basis: 76%;
+        font-size: 10px;
+        padding-right: 70px;
+    }
+
+    .guarda {
+        font-size: 20px;
+    }
+
+    .film {
+        margin-top: 10px;
+    }
+
+    #foto3 {
+        flex-basis: 12%;
+    }
+
+    #lista {
+        font-size: 10px;
+        padding: 0 10px;
+        height: auto;
+    }
+
+    #collegamenti {
+        display: none;
+    }
+
+    #colonne_responsive {
+        display: block;
+        margin-bottom: 25px;
+        padding-left: 0;
+    }
+
+    #colonne_responsive h3, p {
+        font-size: 10px;
+    }
+
+    .div_coll_responsive {
+        padding: 8px;
+    }
+
+    #pedice_generale {
+        width: 100%;
+        height: auto;
+        padding: 0 10px;
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width:281px) {
+    
+    .titolo {
+        font-size: 45px;
+    }
+
+    .paragrafo {
+        font-size: 18px;
+    }
+
+    #galleria {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #galleria .titolo {
+        font-size: 30px;
+    }
+
+    #galleria .paragrafo {
+        font-size: 15px;
+    }
+
+    .galleria {
+        width: 100%;
+    }
+
+    #foto1 {
+        flex-basis: 12%;
+    }
+
+    #foto2 {
+        flex-direction: column;
+        justify-content: flex-end;
+        flex-basis: 76%;
+        font-size: 10px;
+        padding-right: 70px;
+    }
+
+    .guarda {
+        font-size: 20px;
+    }
+
+    .film {
+        margin-top: 10px;
+    }
+
+    #foto3 {
+        flex-basis: 12%;
+    }
+
+    #lista {
+        font-size: 10px;
+        padding-left: 10px;
+        height: auto;
+    }
+
+    #collegamenti {
+        display: none;
+    }
+
+    #colonne_responsive {
+        display: block;
+        margin-bottom: 25px;
+    }
+
+    #colonne_responsive h3, p {
+        font-size: 10px;
+    }
+
+    .div_coll_responsive {
+        padding: 8px;
+    }
+
+    #pedice_generale {
+        width: 100%;
+        height: auto;
+        padding: 0 10px 0 10px;
+        font-size: 10px;
+    }
+}
+
+
